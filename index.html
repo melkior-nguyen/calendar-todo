@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern-todolist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- calendar -->
+        <div class="calendar-wrap">
+            <div class="calendar">
+                <div class="month">
+                    <i class="fa-solid fa-chevron-left prev"></i>
+                    <div class="date">March 1997</div>
+                    <i class="fa-solid fa-chevron-right next"></i>
+                </div>
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days">
+                    <!-- <div class="day prev-day">1</div>
+                    <div class="day today">2</div>
+                    <div class="day active">1</div>
+                    <div class="day event">7</div>
+                    <div class="day">1</div>
+                    <div class="day next-day">7</div> -->
+                </div>
+                <div class="goto-today">
+                    <div class="goto">
+                        <input class="date-input" type="text" placeholder="mm/yyyy">
+                        <button class="goto-btn">go</button>
+                    </div>
+                    <button class="today-btn">today</button>
+                </div>
+            </div>
+        </div>
+        <!-- todo-list -->
+        <div class="todo-wrap">
+            <div class="todo">
+                <div class="todo_header">
+                    <div class="todo_header-day"></div>
+                    <div class="todo_header-date">6 March 2023</div>
+                </div>
+
+                <div class="todo_body">
+                    <!-- <div class="todo_body-notask"> 
+                        <span>Have 0 task today.<br>Add now! </span>              
+                    </div> -->
+                </div>
+                
+                <div class="todo_footer">
+                    <i class="fa-solid fa-plus"></i>
+                    <div class="add_task-wrap ">
+                        <div class="add_task">
+                            <div class="add_task-header">
+                                <h1 class="header_text">Add task</h1>
+                                <i class="fa-solid fa-x add_task-close"></i>
+                            </div>
+                            <input type="text" placeholder="Task Name" class="add_task-name">
+                            <textarea name="" id="" cols="10" rows="1" class="add_task-desc" placeholder="Task Description"></textarea>
+                            <button class="add_task-btn">Add task</button>
+                        </div>
+                    </div>
+                    <!-- <div class="update_task-wrap ">
+                        <div class="update_task">
+                            <div class="update_task-header">
+                                <h1 class="header_text">update task</h1>
+                                <i class="fa-solid fa-x update_task-close"></i>
+                            </div>
+                            <input type="text" placeholder="Task Name" class="update_task-name">
+                            <textarea name="" id="" cols="10" rows="1" class="update_task-desc" placeholder="Task Description"></textarea>
+                            <button class="update_task-btn">update task</button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

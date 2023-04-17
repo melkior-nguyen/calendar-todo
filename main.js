@@ -318,5 +318,5 @@ function getEvents(){
     if(localStorage.getItem('events'=== null)){
         return 
     }
-    events.push(...JSON.parse(localStorage.getItem('events')))
+    // events.push(...JSON.parse(localStorage.getItem('events')))
 }
